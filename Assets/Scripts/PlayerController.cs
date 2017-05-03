@@ -35,7 +35,14 @@ public class PlayerController : MonoBehaviour {
         if (col.gameObject.tag == "platform")
             jumpCount = 0;
         if (col.gameObject.tag == "Finish")
-            SceneManager.LoadScene("SceneWater", LoadSceneMode.Single);
+            if (SceneManager.GetActiveScene().name == "SceneWater")
+            {
+                SceneManager.LoadScene("SceneEnd", LoadSceneMode.Single);
+            }
+            else if (SceneManager.GetActiveScene().name == "SceneVanilla")
+            {
+                SceneManager.LoadScene("SceneWater", LoadSceneMode.Single);
+            }         
         if (col.gameObject.tag == "key")
         {
             col.gameObject.SetActive(false);
@@ -44,6 +51,10 @@ public class PlayerController : MonoBehaviour {
         if (col.gameObject.tag == "berserker")
         {
             health -= 3;
+            if (health < 0)
+            {
+                health = 0;
+            }
             healthBar.GetComponent<SpriteRenderer>().sprite = spr[health];
             isStunned = true;
 

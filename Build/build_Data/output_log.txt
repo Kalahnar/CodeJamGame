@@ -17,22 +17,22 @@ Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Manag
 Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.021 seconds
+- Completed reload, in  0.027 seconds
 Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.865520 ms
+UnloadTime: 2.980203 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 5.990612 ms
+UnloadTime: 5.454319 ms
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 649.
-Total: 0.423146 ms (FindLiveObjects: 0.073468 ms CreateObjectMapping: 0.051709 ms MarkObjects: 0.252403 ms  DeleteObjects: 0.043773 ms)
+Total: 0.270066 ms (FindLiveObjects: 0.031486 ms CreateObjectMapping: 0.018943 ms MarkObjects: 0.175095 ms  DeleteObjects: 0.043261 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1e14 -> priority: 1 
-  Thread -> id: 2328 -> priority: 1 
-  Thread -> id: 1edc -> priority: 1 
-  Thread -> id: 1c68 -> priority: 1 
+  Thread -> id: 1f50 -> priority: 1 
+  Thread -> id: 31e4 -> priority: 1 
+  Thread -> id: 3374 -> priority: 1 
+  Thread -> id: 3338 -> priority: 1 

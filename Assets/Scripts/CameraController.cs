@@ -11,18 +11,30 @@ public class CameraController : MonoBehaviour {
         position = this.transform.position;
 	}
 
-	void Update () {
-        if (player.transform.position.x > position.x && player.transform.position.y > position.y && player.transform.position.x < 69)
+	void FixedUpdate () {
+        if (player.transform.position.x < 0 && player.transform.position.y > 0)
         {
-            this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
+            this.transform.position = new Vector3(0, player.transform.position.y, -10);
         }
-		else if (player.transform.position.x > position.x && player.transform.position.x < 69)
+        else if (player.transform.position.x < 0 && player.transform.position.y < 0)
+        {
+            this.transform.position = new Vector3(0, 0, -10);
+        }
+        else if (player.transform.position.x > 69 && player.transform.position.y > 0)
+        {
+            this.transform.position = new Vector3(69, player.transform.position.y, -10);
+        }
+        else if (player.transform.position.x > 69 && player.transform.position.y < 0)
+        {
+            this.transform.position = new Vector3(69, 0, -10);
+        }
+        else if (player.transform.position.y < 0)
         {
             this.transform.position = new Vector3(player.transform.position.x, 0, -10);
         }
-        else if (player.transform.position.y > position.y)
+        else
         {
-            this.transform.position = new Vector3(0, player.transform.position.y, -10);
+            this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         }
     }
 }
