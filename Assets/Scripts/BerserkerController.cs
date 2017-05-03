@@ -28,7 +28,7 @@ public class BerserkerController : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D col)
     {
         attackDir = "";
-        attackCD = -50;
+        attackCD = -75;
         anim.SetInteger("animState", 0);
     }
 
@@ -37,8 +37,13 @@ public class BerserkerController : MonoBehaviour {
         Vector2 position = this.GetComponent<Rigidbody2D>().position;
         if (transform.position.x - mainCam.transform.position.x <= 9 &&
             mainCam.transform.position.x - transform.position.x <= 9)
-        {            
-            attackCD++;
+        {        
+            if (this.transform.position.y > mainChar.transform.position.y - 5 &&
+                this.transform.position.y < mainChar.transform.position.y + 6)
+            {
+                attackCD++;
+            }
+
             if (attackDir == "right")
             {
                 this.GetComponent<Rigidbody2D>().position = new Vector2(position.x + speed, position.y);
@@ -59,7 +64,6 @@ public class BerserkerController : MonoBehaviour {
                     attackDir = "right";
             }            
         }
-
         else
         {
             attackDir = "";

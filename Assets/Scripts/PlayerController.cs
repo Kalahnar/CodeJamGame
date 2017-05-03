@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour {
     public Text text;
     public GameObject door;
+    public GameObject healthBar;
+    public Sprite[] spr;
 
     private Rigidbody2D body;
     private Animator self;
@@ -13,7 +15,6 @@ public class PlayerController : MonoBehaviour {
     private int jumpCount;
     private int stunCount;
     private int health;
-    private bool keyObtained;
     private bool isStunned;
 
 	// Use this for initialization
@@ -23,7 +24,6 @@ public class PlayerController : MonoBehaviour {
         self = GetComponent<Animator>();
         jumpCount = 0;
         stamina = 10;
-        keyObtained = false;
         staminaRecover = 0;
         isStunned = false;
         stunCount = 0;
@@ -39,11 +39,12 @@ public class PlayerController : MonoBehaviour {
         if (col.gameObject.tag == "key")
         {
             col.gameObject.SetActive(false);
-            keyObtained = true;
             door.SetActive(true);
         }
         if (col.gameObject.tag == "berserker")
         {
+            health -= 3;
+            healthBar.GetComponent<SpriteRenderer>().sprite = spr[health];
             isStunned = true;
 
             if (col.transform.position.x < body.position.x)
@@ -62,6 +63,10 @@ public class PlayerController : MonoBehaviour {
 
     private void FixedUpdate()
     {
+        if (health == 0)
+        {
+            self.SetInteger("animState", 4);
+        }
         if (stamina < 10)
         {
             staminaRecover++;
@@ -139,7 +144,7 @@ public class PlayerController : MonoBehaviour {
         {
             self.SetInteger("animState", 0);
             stunCount++;
-            if (stunCount > 50)
+            if (stunCount > 75)
             {
                 isStunned = false;
                 stunCount = 0;
