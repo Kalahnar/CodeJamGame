@@ -8,24 +8,22 @@ public class RangedController : MonoBehaviour
 
     public GameObject mainChar;
     public GameObject mainCam;
-    public GameObject knife;
-    public Text text;
+    public GameObject projectile;
 
-    private Animator anim;
+    private Animator rangeAnim;
     private Rigidbody2D body;
     private float speed;
     private int attackCD;
-    private string attackDir;
+    private GameObject star;
 
 
     private void Start()
     {
-        anim = GetComponent<Animator>();
+        rangeAnim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         body.freezeRotation = true;
         speed = 0.13f;
         attackCD = 0;
-        attackDir = "";
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -37,7 +35,7 @@ public class RangedController : MonoBehaviour
         if (transform.position.x - mainCam.transform.position.x <= 9 &&
             mainCam.transform.position.x - transform.position.x <= 9)
         {
-            if (this.transform.position.y > mainChar.transform.position.y - 5 &&
+            if (this.transform.position.y > mainChar.transform.position.y - 7 &&
                 this.transform.position.y < mainChar.transform.position.y + 6)
             {
                 attackCD++;
@@ -45,10 +43,13 @@ public class RangedController : MonoBehaviour
 
             if (attackCD > 50)
             {
-                knife.SetActive(true);
+                star = Instantiate(projectile);
+                star.transform.position = this.transform.position;
+                star.SetActive(true);
                 float shotX = mainChar.transform.position.x - this.transform.position.x;
                 float shotY = mainChar.transform.position.y - this.transform.position.y;
-                knife.GetComponent<Rigidbody2D>().velocity = new Vector2(shotX, shotY);
+                star.GetComponent<Rigidbody2D>().velocity = new Vector2(shotX, shotY);
+                star.GetComponent<Rigidbody2D>().angularVelocity = 5;
 
                 attackCD = -50;
             }
@@ -57,6 +58,5 @@ public class RangedController : MonoBehaviour
 
     private void Update()
     {
-        text.text = this.transform.position.ToString();
     }
 }
