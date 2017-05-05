@@ -1,74 +1,38 @@
 Initialize engine version: 5.6.0f3 (497a0f351392)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 980M (ID=0x13d7)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti (ID=0x1200)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
-    Driver:   21.21.13.7654
+    VRAM:     978 MB
+    Driver:   21.21.13.7306
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.083 seconds
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\lukag\Documents\GitHub\CodeJamGame\Build\build_Data\Managed\System.dll (this message is harmless)
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.031 seconds
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Programs\Unity\Projects\CodeJamGame\Build\build_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.779950 ms
+UnloadTime: 1.097161 ms
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.536493 ms
+UnloadTime: 5.597672 ms
 
-Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 649.
-Total: 0.580345 ms (FindLiveObjects: 0.098765 ms CreateObjectMapping: 0.057679 ms MarkObjects: 0.328691 ms  DeleteObjects: 0.094419 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.997037 ms
-
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 897.
-Total: 3.361185 ms (FindLiveObjects: 0.119703 ms CreateObjectMapping: 0.091259 ms MarkObjects: 0.537679 ms  DeleteObjects: 2.611753 ms)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
-
-Scene 'SceneEnd' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
-To add a scene to the build settings use the menu File->Build Settings...
- 
-(Filename:  Line: 137)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 650.
+Total: 0.298993 ms (FindLiveObjects: 0.041213 ms CreateObjectMapping: 0.018943 ms MarkObjects: 0.186870 ms  DeleteObjects: 0.051197 ms)
 
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1bc8 -> priority: 1 
-  Thread -> id: 20e0 -> priority: 1 
-  Thread -> id: 3170 -> priority: 1 
-  Thread -> id: 4268 -> priority: 1 
+  Thread -> id: 17d8 -> priority: 1 
+  Thread -> id: 2f48 -> priority: 1 
+  Thread -> id: 19ac -> priority: 1 
+  Thread -> id: 295c -> priority: 1 
