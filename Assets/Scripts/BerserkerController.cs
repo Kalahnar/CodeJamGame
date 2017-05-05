@@ -35,11 +35,11 @@ public class BerserkerController : MonoBehaviour {
     private void FixedUpdate()
     {
         Vector2 position = this.GetComponent<Rigidbody2D>().position;
-        if (transform.position.x - mainCam.transform.position.x <= 9 &&
-            mainCam.transform.position.x - transform.position.x <= 9)
+        if (transform.position.x - mainCam.transform.position.x <= 4 &&
+            mainCam.transform.position.x - transform.position.x <= 4)
         {        
-            if (this.transform.position.y > mainChar.transform.position.y - 5 &&
-                this.transform.position.y < mainChar.transform.position.y + 6)
+            if (this.transform.position.y > mainChar.transform.position.y - 2 &&
+                this.transform.position.y < mainChar.transform.position.y + 3)
             {
                 attackCD++;
             }

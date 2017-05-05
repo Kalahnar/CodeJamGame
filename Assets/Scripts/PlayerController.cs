@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour {
     public GameObject door;
     public GameObject healthBar;
     public Sprite[] spr;
+    public Sprite[] staminaSpr;
 
     private Rigidbody2D body;
     private Animator self;

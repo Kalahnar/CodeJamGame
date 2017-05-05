@@ -5,7 +5,10 @@ using UnityEngine;
 public class CameraController : MonoBehaviour {
     public GameObject player;
 
+    private Vector2 position;
+
 	void Start () {
+        position = this.transform.position;
 	}
 
 	void FixedUpdate () {
