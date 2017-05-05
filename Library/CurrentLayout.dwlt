@@ -340,6 +340,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets
   m_ViewMode: 1
   m_StartGridSize: 89
@@ -353,6 +354,21 @@ MonoBehaviour:
     m_SelectedIDs: 2a250000
     m_LastClickedID: 9514
     m_ExpandedIDs: 2a25000000ca9a3bffffff7f
+=======
+    - Assets/_Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 89
+  m_LastFolders:
+  - Assets/_Scenes
+  m_LastFoldersGridSize: 89
+  m_LastProjectPath: D:\Programs\Unity\Projects\CodeJamGame
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8c290000
+    m_LastClickedID: 10636
+    m_ExpandedIDs: 00000000da24000000ca9a3bffffff7f
+>>>>>>> refs/remotes/origin/experiment
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -380,7 +396,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 34}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 
+=======
+    m_ExpandedIDs: 00000000da240000
+>>>>>>> refs/remotes/origin/experiment
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -572,9 +592,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
+<<<<<<< HEAD
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: 28.760132
+    speed: 2
+    m_Value: 28.760132
+>>>>>>> refs/remotes/origin/experiment
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -613,9 +639,15 @@ MonoBehaviour:
     height: 927
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 
     m_LastClickedID: 0
     m_ExpandedIDs: 34fbffff00000000
+=======
+    m_SelectedIDs: 1e290000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 0efaffffe8faffff00000000
+>>>>>>> refs/remotes/origin/experiment
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -634,7 +666,11 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
+<<<<<<< HEAD
   - 
+=======
+  - SceneVanilla
+>>>>>>> refs/remotes/origin/experiment
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
