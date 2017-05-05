@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-sceneSetups: []
-=======
-sceneSetups:
-- path: Assets/_Scenes/SceneVanilla.unity
-  isLoaded: 1
-  isActive: 1
->>>>>>> refs/remotes/origin/experiment
