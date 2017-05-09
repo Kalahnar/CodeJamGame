@@ -1,4 +1,4 @@
 # CodeJamGame
 Game for CodeJam
 
-It's a Unity game. A shitty Unity game.
+It's a Unity game. A unfinished, unpolished Unity game.
