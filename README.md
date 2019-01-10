@@ -1,4 +1,7 @@
 # CodeJamGame
 Game for CodeJam
 
-It's a Unity game. An unfinished, unpolished Unity game.
+Made by @Kalahnar and MirinaeMiREU for a school competition.
+Language used: C# 
+Time to make: 2 weeks
+Time spent workin on: About 40 hours
