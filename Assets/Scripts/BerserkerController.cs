@@ -35,11 +35,11 @@ public class BerserkerController : MonoBehaviour {
     private void FixedUpdate()
     {
         Vector2 position = this.GetComponent<Rigidbody2D>().position;
-        if (transform.position.x - mainCam.transform.position.x <= 4 &&
-            mainCam.transform.position.x - transform.position.x <= 4)
+        if (transform.position.x - mainCam.transform.position.x <= 9 &&
+            mainCam.transform.position.x - transform.position.x <= 9)
         {        
-            if (this.transform.position.y > mainChar.transform.position.y - 2 &&
-                this.transform.position.y < mainChar.transform.position.y + 3)
+            if (this.transform.position.y > mainChar.transform.position.y - 5 &&
+                this.transform.position.y < mainChar.transform.position.y + 6)
             {
                 attackCD++;
             }
@@ -49,12 +49,24 @@ public class BerserkerController : MonoBehaviour {
                 this.GetComponent<Rigidbody2D>().position = new Vector2(position.x + speed, position.y);
                 anim.SetInteger("animState", 1);
                 this.transform.localScale = new Vector3(0.05f, 0.05f, 1);
+                if (transform.position.x - mainChar.transform.position.x >= 4)
+                {
+                    attackDir = "";
+                    anim.SetInteger("animState", 0);
+                    attackCD = 0;
+                }
             }
             else if (attackDir == "left")
             {
                 this.GetComponent<Rigidbody2D>().position = new Vector2(position.x - speed, position.y);
                 anim.SetInteger("animState", 1);
                 this.transform.localScale = new Vector3(-0.05f, 0.05f, 1);
+                if (mainChar.transform.position.x - transform.position.x >= 4)
+                {
+                    attackDir = "";
+                    anim.SetInteger("animState", 0);
+                    attackCD = 0;
+                }
             }
             else if (attackCD >= 25)
             {
